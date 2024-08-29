@@ -68,8 +68,14 @@ function Weather() {
                     Search
                 </Button>
 
-                {loading && <p>Loading data…</p>}
+                {/* Loading message */}
+                {loading && (
+                    <p className="loading-message" style={{ marginTop: '20px', fontSize: '18px', color: '#333' }}>
+                        Loading data…
+                    </p>
+                )}
                 
+                {/* Weather data cards */}
                 {weatherData && (
                     <div className="weather-cards" style={{ display: 'flex', gap: '10px', marginTop: '20px', flexWrap: 'wrap', justifyContent: 'center' }}>
                         <Card className="weather-card" style={{ maxWidth: '150px' }}>
