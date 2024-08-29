@@ -169,16 +169,17 @@ function States() {
 
             {/* Summary statement */}
             {summary && (
-                <p style={{ textAlign: 'center', marginTop: '20px', fontSize: '18px' }}>You Selected 
-                    <span style={{ fontWeight: 'bold', color: 'black', marginRight: '5px', marginLeft: '5px',fontSize:'1.5rem' }}>
-                         {selectedCity}
-                    </span>, 
-                    <span style={{ fontWeight: 'bold', color: 'lightgray', marginRight: '5px' }}>
+                <p style={{ textAlign: 'center', marginTop: '20px', fontSize: '18px' }}>
+                    You Selected 
+                    <strong style={{ color: 'black', fontSize: '1.5rem', margin: '0 5px' }}>
+                        {selectedCity}
+                    </strong>, 
+                    <strong style={{ color: 'lightgray', margin: '0 5px' }}>
                         {selectedState}
-                    </span>, 
-                    <span style={{ fontWeight: 'bold', color: 'lightgray' }}>
+                    </strong>, 
+                    <strong style={{ color: 'lightgray' }}>
                         {selectedCountry}
-                    </span>
+                    </strong>
                 </p>
             )}
         </>
