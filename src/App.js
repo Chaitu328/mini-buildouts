@@ -7,8 +7,8 @@ function App() {
   return (
     <>
       {/* <Login/> */}
-      {/* <Weather/> */}
-      <CitySelector/>
+      <Weather/>
+      {/* <CitySelector/> */}
     </>
   )
 }
