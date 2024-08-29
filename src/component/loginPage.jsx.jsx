@@ -5,17 +5,17 @@ function LoginPage() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
     const handleSubmit = (event) => {
-        event.preventDefault(); // Prevent default form submission behavior
+        event.preventDefault();     
 
         const username = event.target.username.value;
         const password = event.target.password.value;
 
         if (username === 'user' && password === 'password') {
             setMessage('Welcome, user!');
-            setIsLoggedIn(true); // Set login state to true
+            setIsLoggedIn(true); 
         } else {
             setMessage('Invalid username or password');
-            setIsLoggedIn(false); // Ensure login state is false in case of wrong credentials
+            setIsLoggedIn(false); 
         }
     };
 
@@ -23,7 +23,7 @@ function LoginPage() {
         <form onSubmit={handleSubmit}>
             <h1>Login Page</h1>
             
-            {!isLoggedIn && ( // Conditionally render the input fields only if not logged in
+            {!isLoggedIn && ( 
                 <>
                     <div>
                         <label htmlFor="username">Username</label>
