@@ -1,6 +1,6 @@
 import Weather from "./component/xWeather"
 import Login from "./component/loginPage.jsx"
-import States from "./component/Xstates.jsx"
+import CitySelector from "./component/CitySelector/CitySelector.jsx"
 import './App.css';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <>
       {/* <Login/> */}
       {/* <Weather/> */}
-      <States/>
+      <CitySelector/>
     </>
   )
 }
