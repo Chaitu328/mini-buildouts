@@ -107,7 +107,7 @@ function States() {
                     border: '1px solid #ccc',
                     width: '100%',
                     maxWidth: '300px',
-                    margin: '10px', 
+                    margin: '10px auto', 
                     fontSize: '16px'
                 }}
             >
@@ -130,7 +130,7 @@ function States() {
                     border: '1px solid #ccc',
                     width: '100%',
                     maxWidth: '300px',
-                    margin: '10px', 
+                    margin: '10px auto', 
                     fontSize: '16px',
                     opacity: !selectedCountry ? 0.5 : 1
                 }}
@@ -154,7 +154,7 @@ function States() {
                     border: '1px solid #ccc',
                     width: '100%',
                     maxWidth: '300px',
-                    margin: '10px', 
+                    margin: '10px auto', 
                     fontSize: '16px',
                     opacity: !selectedState ? 0.5 : 1
                 }}
@@ -170,10 +170,10 @@ function States() {
             {/* Summary statement */}
             {summary && (
                 <p style={{ textAlign: 'center', marginTop: '20px', fontSize: '18px' }}>
-                    <span style={{ fontWeight: 'bold', color: 'black' }}>
+                    <span style={{ fontWeight: 'bold', color: 'black', marginRight: '5px' }}>
                         You Selected {selectedCity}
                     </span>, 
-                    <span style={{ fontWeight: 'bold', color: 'lightgray' }}>
+                    <span style={{ fontWeight: 'bold', color: 'lightgray', marginRight: '5px' }}>
                         {selectedState}
                     </span>, 
                     <span style={{ fontWeight: 'bold', color: 'lightgray' }}>
