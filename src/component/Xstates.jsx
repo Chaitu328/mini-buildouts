@@ -169,9 +169,9 @@ function States() {
 
             {/* Summary statement */}
             {summary && (
-                <p style={{ textAlign: 'center', marginTop: '20px', fontSize: '18px' }}>
-                    <span style={{ fontWeight: 'bold', color: 'black', marginRight: '5px' }}>
-                        You Selected {selectedCity}
+                <p style={{ textAlign: 'center', marginTop: '20px', fontSize: '18px' }}>You Selected 
+                    <span style={{ fontWeight: 'bold', color: 'black', marginRight: '5px', marginLeft: '5px',fontSize:'1.5rem' }}>
+                         {selectedCity}
                     </span>, 
                     <span style={{ fontWeight: 'bold', color: 'lightgray', marginRight: '5px' }}>
                         {selectedState}
