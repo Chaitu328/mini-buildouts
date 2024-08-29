@@ -171,13 +171,13 @@ function States() {
             {summary && (
                 <p style={{ textAlign: 'center', marginTop: '20px', fontSize: '18px' }}>
                     <span style={{ fontWeight: 'bold', color: 'black' }}>
-                        You Selected {selectedCountry}
+                        You Selected {selectedCity}
                     </span>, 
                     <span style={{ fontWeight: 'bold', color: 'lightgray' }}>
                         {selectedState}
                     </span>, 
                     <span style={{ fontWeight: 'bold', color: 'lightgray' }}>
-                        {selectedCity}
+                        {selectedCountry}
                     </span>
                 </p>
             )}
