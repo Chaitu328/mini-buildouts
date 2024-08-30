@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import styles from "./xWeather.module.css";
+import './xWeather.css'; // Note the change from module.css to regular CSS import
 import axios from 'axios';
 
 const WeatherCard = ({ title, data }) => {
     return (
-        <div className={styles.weatherCard}>
+        <div className="weather-card">
             <h3>{title}</h3>
             <p>{data}</p>
         </div>
@@ -35,8 +35,8 @@ function Weather() {
 
     return (
         <>
-            <div>
-                <input className={styles.searchBar}
+            <div className="search-bar">
+                <input
                     type="text"
                     value={city}
                     onChange={(e) => setCity(e.target.value)}
@@ -44,10 +44,10 @@ function Weather() {
                 />
                 <button onClick={handleSearch}>Search</button>
             </div>
-            <div className={styles.weatherDisplay}>
+            <div className="weather-display">
                 {loading && <p>Loading data...</p>}
                 {!loading && weatherData && (
-                    <div className={styles.weatherCards}>
+                    <div className="weather-cards">
                         <WeatherCard
                             title="Temperature"
                             data={`${weatherData.current.temp_c}°C`}
