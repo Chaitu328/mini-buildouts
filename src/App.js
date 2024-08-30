@@ -1,15 +1,16 @@
 import Weather from "./component/xWeather/xWeather.jsx"
 import Login from "./component/loginPage.jsx"
-import CitySelector from "./component/CitySelector/CitySelector.jsx"
+import CitySelector from "./component/CitySelector/CitySelector.jsx";
+import SpellCheckApp from "./component/XSpellCheck.jsx";
 import './App.css';
-// import "./styles.css"
 
 function App() {
   return (
     <>
       {/* <Login/> */}
-      <Weather/>
+      {/* <Weather/> */}
       {/* <CitySelector/> */}
+      <SpellCheckApp/>
     </>
   )
 }
